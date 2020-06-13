@@ -56,7 +56,7 @@ class Job:
         if scheduler['frequency'] == 'minute':
             schedule.every().minute.do(self.job, scheduler['title'])
         if scheduler['frequency'] == 'second':
-            schedule.every(1).seconds.do(self.job, scheduler['title'])
+            schedule.every(2).seconds.do(self.job, scheduler['title'])
 
     def run_pending(self):
         while True:
