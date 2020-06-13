@@ -4,6 +4,13 @@ import time
 import schedule
 
 
+# ...Centipede
+# ..\      /
+# ...╚⊙ ⊙╝
+# ..╚═(███)═╝
+# .╚═(███)═╝
+# ..╚═(███)═╝
+# .╚═(███)═╝
 class Job:
     def __init__(self):
         with open('schedule.json') as file:
