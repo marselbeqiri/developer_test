@@ -1,0 +1,36 @@
+[
+  {
+    "task": "Open MsOffice",
+    "schedule": [
+      {
+        "title": "Open MS Office",
+        "frequency": "hour"
+      },
+      {
+        "title": "Open MS Excel",
+        "frequency": "day",
+        "at": "13:00"
+      }
+    ]
+  },
+  {
+    "task": "Other",
+    "schedule": [
+      {
+        "title": "Launch Break",
+        "frequency": "day",
+        "at": "13:00"
+      },
+      {
+        "title": "Attendance reports",
+        "frequency": "week",
+        "day": "thursday",
+        "at": "13:00"
+      },
+      {
+        "title": "Quote",
+        "frequency": "minute"
+      }
+    ]
+  }
+]
