@@ -13,7 +13,9 @@ def needle_in_haystack(needle, haystack, threshold):
         while temp_threshold < len(needle) + 1:
             if temp_threshold - min_value >= 3:
                 current_max = temp_threshold
-                res = [i for i in range(len(haystack)) if haystack.startswith(needle[min_value:current_max], i)]
+
+                # res = [i for i in range(len(haystack)) if haystack.startswith(needle[min_value:current_max], i)]
+                res = find_all_indexes(haystack, needle[min_value:current_max])
 
                 if res:
                     print_results.append(
@@ -29,5 +31,18 @@ def needle_in_haystack(needle, haystack, threshold):
 
     return print(print_results)
 
+def find_all_indexes(input_str, search_str):
+    l1 = []
+    length = len(input_str)
+    index = 0
+    while index < length:
+        i = input_str.find(search_str, index)
+        if i == -1:
+            return l1
+        l1.append(i)
+        index = i + 1
+    return l1
 
 needle_in_haystack(needle, haystack, threshold)
+
+
